@@ -3,6 +3,11 @@ main() {
   final double b = 10.0;
   const double c = 10.0;
 
+  late final double x;
+  x = 10;
+
+  print(x);
+
   // a = 20;
   // b = 20;
   // c = 20;
