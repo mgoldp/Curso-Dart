@@ -2,9 +2,9 @@ main() {
   // Operadores de asignación
 
   int a = 10; // = asigna valor a la variable
-  int b; //= 1;
+  int? b; //= 1;
 
-  //b ??= 20; // Asignar el valor unicamente si la variable es null
+  //b  ??= 20; // Asignar el valor unicamente si la variable es null
 
   //print(b);
 
