@@ -80,14 +80,14 @@ main() {
 void llenarDatos(int idUsuario, double cantSalario) {
   stdout.writeln('=========== Usuario $idUsuario =============');
 
-  stdout.writeln('¿Cúal es su nombre?');
-  String nombre = stdin.readLineSync() ?? '';
+  imprimir('¿Cúal es su nombre?');
+  String nombre = leer();
 
-  stdout.writeln('¿Qué edad tienes?');
-  String edad = stdin.readLineSync() ?? '';
+  imprimir('¿Qué edad tienes?');
+  String edad = leer();
 
-  stdout.writeln('¿En qué país naciste?');
-  String pais = stdin.readLineSync() ?? '';
+  imprimir('¿En qué país naciste?');
+  String pais = leer();
 
   final Map<String, dynamic> usuario = {
     'nombre': nombre,
@@ -95,7 +95,7 @@ void llenarDatos(int idUsuario, double cantSalario) {
     'pais': pais
   };
 
-  stdout.writeln('Usuario $idUsuario sin deducciones');
+  imprimir('Usuario $idUsuario sin deducciones');
   stdout.writeln(usuario);
 
   double salario = cantSalario;
@@ -106,5 +106,13 @@ void llenarDatos(int idUsuario, double cantSalario) {
   usuario['deducciones'] = deducciones;
   usuario['salarioNeto'] = salarioNeto;
 
-  stdout.writeln(usuario);
+  imprimir(usuario);
+}
+
+void imprimir(dato) {
+  stdout.writeln(dato);
+}
+
+String leer() {
+  return stdin.readLineSync() ?? '';
 }
