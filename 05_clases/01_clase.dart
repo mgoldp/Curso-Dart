@@ -12,7 +12,8 @@ void main() {
 
   persona.nombre = 'Fernando';
   persona.edad = 33;
-  persona.bio = 'Nació en Bogotá';
+  persona.bio = 'cambié de valor'; //privado
 
-  print(persona);
+  //print(persona);
+  print(persona.bio);
 }
