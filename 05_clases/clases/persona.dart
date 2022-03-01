@@ -15,6 +15,14 @@ class Persona {
   }
 
   //constructores
+  // Persona(int edad, String nombre) {
+  //   //print('Constructor');
+  //   this.edad = edad;
+  //   this.nombre = nombre;
+  // }
+
+  //Resumen constructor persona
+  Persona({this.edad = 0, this.nombre = 'Sin Nombre'});
 
   //métodos
   @override

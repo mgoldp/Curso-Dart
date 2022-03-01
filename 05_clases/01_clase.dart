@@ -8,12 +8,12 @@ void main() {
   // print(persona['edad ']);
 
   //instancia de clase
-  final persona = new Persona();
+  final persona = new Persona(edad: 40, nombre: 'Juan Carlos');
 
-  persona.nombre = 'Fernando';
-  persona.edad = 33;
-  persona.bio = 'cambié de valor'; //privado
+  // persona.nombre = 'Fernando';
+  // persona.edad = 33;
+  //persona.bio = 'cambié de valor'; //privado
 
   //print(persona);
-  print(persona.bio);
+  print(persona);
 }
