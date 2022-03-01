@@ -2,7 +2,7 @@ class Persona {
   // campos o propiedades
   String? nombre;
   int? edad;
-  String? bio;
+  String? _bio = 'hola, soy una propiedad privada';
 
   //get y sets
 
@@ -12,6 +12,6 @@ class Persona {
   @override
   String toString() {
     // TODO: implement toString
-    return '$nombre $edad $bio';
+    return '$nombre $edad $_bio';
   }
 }
