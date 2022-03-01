@@ -24,6 +24,18 @@ class Persona {
   //Resumen constructor persona
   Persona({this.edad = 0, this.nombre = 'Sin Nombre'});
 
+  Persona.persona30(this.nombre) {
+    this.edad = 30;
+  }
+  Persona.persona40(this.nombre) {
+    this.edad = 40;
+    this.nombre = nombre;
+  }
+  Persona.persona50(this.edad) {
+    this.nombre = 'Juan';
+    this.edad = edad;
+  }
+
   //métodos
   @override
   String toString() {
