@@ -11,4 +11,11 @@ void main(List<String> args) {
   print('EndsWith a: ${nombreCompleto.endsWith('a')}'); //true, termina en a
   print(
       'PadLeft: ${nombreCompleto.padLeft(20, '...')}'); // hace espacio hacía izquierad las veces que hacen falta en lenght para llegar al 20 = 4
+
+//operadores:
+
+  print('Operador[]: ${nombreCompleto[10]}');
+  print('Operador *: ${nombreCompleto * 2}');
+  print('Operador *: ${'*' * 20}');
+  print('ReplaceAll: ${nombreCompleto.replaceAll(RegExp(r'e'), 'a')}');
 }
